@@ -1,0 +1,85 @@
+.seleccion-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.seleccion-container h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.botones-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.boton-registro {
+  width: 250px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.boton-registro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.boton-registro i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.boton-registro span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.boton-registro p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0;
+}
+
+.cliente {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.empleado {
+  background-color: #2196F3;
+  color: white;
+}
+
+.cliente:hover {
+  background-color: #45a049;
+}
+
+.empleado:hover {
+  background-color: #1976D2;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .botones-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boton-registro {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

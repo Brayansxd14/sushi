@@ -1,0 +1,165 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+  
+.tipo-usuario-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.selector-btn {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.selector-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+  
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+.form-group label {
+    color: #666;
+    font-size: 0.9em;
+}
+  
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+  
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+  
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+  
+.auth-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+  
+.auth-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+  
+.back-button {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    color: #212529;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.back-button:hover {
+    background-color: #e9ecef;
+}
+  
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    animation: slideIn 0.3s ease-out;
+}
+  
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+  
+.message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+  
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+@media (max-width: 480px) {
+    .login-container {
+        margin: 20px;
+    }
+  
+    .links-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .links-container {
+        padding: 1rem;
+    }
+  
+    .auth-link {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+  
+    .back-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.75rem;
+    }
+}
